@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>순수 리액트 문법을 이용한 react 문서</title>
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script>
+    const $root = document.getElementById('root');
+    // const $h1 = React.createElement(요소명,{속성},텍스트);
+    const $h1 = React.createElement(
+      'h1',
+      { 'name': 'Donna', 'address': 'Seoul, South Korea' },
+      'UI/UX Webdesign course'
+    );
+    ReactDOM.render($h1, $root);
+  </script>
+</body>
+
+</html>
